@@ -1,3 +1,5 @@
+from typing import List
+
 class Solution:
     def recur_search(self, nums, first, last, target):
         n = last-first
