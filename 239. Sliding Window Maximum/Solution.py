@@ -6,7 +6,7 @@ class Solution:
         left = 0
         right = k-1
         
-        max_sliding_window = []
+        max_sliding_window = [] # containing the indexes of the numbers
         q = collections.deque()
         
         # Iteratively add 1 number in the first window to the deque
