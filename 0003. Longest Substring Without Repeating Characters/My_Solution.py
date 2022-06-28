@@ -10,8 +10,9 @@ class Solution:
         
         while r < len(s):
             if s[r] in char_set:
-                l = r = char_set[s[r]] + 1
-                char_set = {s[r]:r}
+                l = char_set[s[r]] + 1
+                r = char_set[s[r]]
+                char_set = {}
             else:
                 char_set[s[r]] = r
                 if r - l > lar_r - lar_l:
