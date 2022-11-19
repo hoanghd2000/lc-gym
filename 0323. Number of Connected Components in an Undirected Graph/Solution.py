@@ -1,5 +1,6 @@
+from typing import List
 class Solution:
-    def numConnectedComponents(self, n, edges):
+    def countComponents(self, n: int, edges: List[List[int]]) -> int:
 
         # Edge Case
         if not edges:
